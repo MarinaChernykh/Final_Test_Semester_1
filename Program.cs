@@ -39,6 +39,6 @@ string[] array = {"hello", "2", "world", ":-)"};
 string[] createdArray = CreateNewArray(array);
 FillAray(array, createdArray);
 string input = PrintArray(array);
-Console.WriteLine($"input:   {input}");
+Console.WriteLine($"input:    {input}");
 string output = PrintArray(createdArray);
 Console.WriteLine($"output:   {output}");
