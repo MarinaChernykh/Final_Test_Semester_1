@@ -24,14 +24,21 @@ string[] FillAray(string[] inputArray, string[] outputArray)
     return outputArray;
 }
 
-void PrintArray(string[] array)
+string PrintArray(string[] array)
 {
-
+  string result = String.Empty;
+  for (int i = 0; i < array.Length; i++)
+  {
+    result += ($"{array[i]} ");
+  }
+  return result;
 }
 
 
 string[] array = {"hello", "2", "world", ":-)"};
 string[] createdArray = CreateNewArray(array);
 FillAray(array, createdArray);
-PrintArray(array);
-PrintArray(createdArray);
+string input = PrintArray(array);
+Console.WriteLine($"input:   {input}");
+string output = PrintArray(createdArray);
+Console.WriteLine($"output:   {output}");
