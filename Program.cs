@@ -26,16 +26,16 @@ string[] FillAray(string[] inputArray, string[] outputArray)
 
 string PrintArray(string[] array)
 {
-  string result = String.Empty;
-  for (int i = 0; i < array.Length; i++)
-  {
-    result += ($"{array[i]} ");
-  }
-  return result;
+    string result = String.Empty;
+    for (int i = 0; i < array.Length; i++)
+    {
+        result += ($"{array[i]} ");
+    }
+    return result;
 }
 
 
-string[] array = {"hello", "2", "world", ":-)"};
+string[] array = { "hello", "2", "world", ":-)" };
 string[] createdArray = CreateNewArray(array);
 FillAray(array, createdArray);
 string input = PrintArray(array);
