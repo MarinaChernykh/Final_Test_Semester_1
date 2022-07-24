@@ -1,7 +1,12 @@
 ﻿
 string[] CreateNewArray(string[] inputArray)
 {
-
+    int counter = 0;
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= 3) counter++;
+    }
+    string[] outputArray = new string[counter];
     return outputArray;
 }
 
